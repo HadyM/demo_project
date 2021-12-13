@@ -1,0 +1,21 @@
+.navbar {
+  &__logo {
+    color: blue;
+  }
+
+  &__menuItems {
+    float: right;
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline;
+        margin-left: 25px;
+        a {
+          text-decoration: none;
+          color: red;
+        }
+      }
+    }
+  }
+}
