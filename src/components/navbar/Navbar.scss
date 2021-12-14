@@ -1,10 +1,18 @@
 .navbar {
+  padding: 10px 30px;
+
   &__logo {
-    color: blue;
+    float: left;
+
+    img {
+      height: 60px;
+    }
   }
 
   &__menuItems {
     float: right;
+    padding-top: 22px;
+
     ul {
       list-style-type: none;
 
@@ -16,6 +24,49 @@
           color: red;
         }
       }
+    }
+  }
+
+  &__collapsedMenuIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .navbar {
+    padding: 0;
+
+    &__logo {
+      margin-left: 20px;
+    }
+
+    &__menuItems {
+      display: none;
+
+      &-active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        text-align: center;
+
+        ul {
+          padding-right: 40px;
+
+          li {
+            display: block;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+
+    &__collapsedMenuIcon {
+      display: block;
+      margin-right: 20px;
+      float: right;
+      font-size: 40px;
     }
   }
 }
