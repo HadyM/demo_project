@@ -4,7 +4,12 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
+      <div className="Title">
+        <h1>Music Streaming Website</h1>
+      </div>
     </div>
   );
 }
